@@ -1,0 +1,145 @@
+/* body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#message-container{
+    background-color: lightgreen;
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.message{
+    background-color: lightyellow;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 15px;
+    max-width: 250px;
+}
+.left{
+    text-align: left;
+    margin-right: auto;
+}
+.right{
+    text-align: right;
+    margin-left: auto;
+}
+form{
+    margin: 8px;
+}
+#message-input{
+    width: 300px;
+    height: 30px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+}
+#send-button{
+    width: 70px;
+    height: 35px;
+    
+    font-size: 1.2rem;
+    border: none;
+    background-color: lightblue;
+    border-radius: 15px;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #0f0c29;
+    color: white;
+}
+
+/* Title */
+h1 {
+    margin: 15px;
+}
+
+/* Chat container */
+#message-container {
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background: linear-gradient(180deg, #1f1c2c, #928dab);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Messages */
+.message {
+    max-width: 70%;
+    padding: 10px 14px;
+    margin: 6px 0;
+    border-radius: 18px;
+    font-size: 14px;
+}
+
+/* Left messages */
+.left {
+    background: rgba(255,255,255,0.1);
+    color: white;
+    align-self: flex-start;
+}
+
+/* Right messages */
+.right {
+    background: linear-gradient(135deg, #ff00cc, #3333ff);
+    color: white;
+    align-self: flex-end;
+}
+
+/* Input container */
+#send-container {
+    margin-top: 10px;
+    display: flex;
+    width: 350px;
+    background: rgba(0,0,0,0.4);
+    padding: 8px;
+    border-radius: 20px;
+}
+
+/* Input */
+#message-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+/* Button */
+#send-button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(135deg, #ff00cc, #3333ff);
+    color: white;
+    cursor: pointer;
+}
+
+.chat-header {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
