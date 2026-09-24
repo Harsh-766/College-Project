@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 using namespace std;
-
+ 
 struct Product {
     int code;
     string name;
