@@ -37,7 +37,7 @@ public:
 
     // Remove song
     void removeSong(string name) {
-        Song* temp = head;
+      Song* temp = head;
 
         while (temp != NULL) {
             if (temp->name == name) {
