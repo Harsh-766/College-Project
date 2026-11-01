@@ -8,7 +8,7 @@ struct Node {
     int freq;
     Node* prev;
     Node* next;
-
+ 
     Node(string t) {
         topic = t;
         freq = 1;
